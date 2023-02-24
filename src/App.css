@@ -1,38 +1,102 @@
-.App {
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  background: #2d2d2d;
+}
+
+input:focus {
+  outline: none;
+}
+
+.inner {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 10px;
+  color: #61dafb;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 25px;
+}
+
+.addBox .input {
+  padding: 8px;
+  width: calc(100% - 50px);
+  border-radius: 5px;
+}
+
+.addBox .addBtn {
+  padding: 8px;
+  width: 50px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.toDoList {
+  margin-top: 20px;
+}
+
+.toDoList > li > form {
+  display: flex;
+  justify-content: space-between;
+}
+.toDoList > li + li {
+  margin-top: 14px;
+}
+.btnWrap {
+  display: flex;
+  width: 50px;
+  padding-left: 4px;
+  justify-content: space-evenly;
+}
+
+.btnWrap > li > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toDoList {
+  margin-top: 20px;
   color: white;
 }
 
-.App-link {
+.modifyInput {
+  padding: 5px;
+  width: calc(100% - 50px);
+}
+
+.date {
+  margin-top: 20px;
+  text-align: center;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.week {
+  text-align: center;
+  color: #61dafb;
+}
+
+.item {
+  margin-bottom: 5px;
 }
